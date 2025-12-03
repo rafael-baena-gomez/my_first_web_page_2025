@@ -44,16 +44,30 @@
         font-size: 1.5rem;
         font-left: 20px;
     }
+
     nav {
+        display: flex;
+        gap: 15px;
+    }
+
+    nav a {
         color: white;
         text-decoration: none;
-        padding: 5px 10px;
         font-size: 1rem;
+        padding: 5px 10px;
+        border-radius: 5px;
         transition: background-color 0.3s;
     }
+
     nav a:hover {
         background-color: #555;
     }
+
+    nav a.active {
+        background-color: red;
+        color: white;
+    }
+    
     .footer_section {
         max-width: 1000px;
         width: 100%;
@@ -61,12 +75,53 @@
         color: white;
         text-align: center;
     }
+
     .footer_section a {
         color: red;
         text-decoration: none;
     }
+
     .footer_section a:hover {
         text-decoration: underline;
+    }
+
+    .content {
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #f5f5f5;
+    }
+
+    .menu {
+        background-color: #1a1a2e;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .menu-content {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        align-items: center;
+    }
+
+    .menu-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-item p {
+        margin-top: 10px 0 0;
+        font-size: 14px;
+    }
+
+    .menu-icon {
+        width: 40px;
+        height: 40px;
     }
 
   </style>
@@ -83,6 +138,39 @@
     </nav>
   </div>
 </header>
+
+<header class="container">  
+    <div class="header-content">
+        <div class="header-title">Webpage Header</div>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </div>
+</header>
+<main class="container">
+  <div class="content">
+    <h1>Welcome to the Webpage</h1>
+    <p>This the central area of the webpage where you can include content.</p>
+  </div>
+  <div class="menu">
+    <div class="menu-content">
+        <div class="menu-item">
+            <img src="./images/location-white.png" alt="Location Icon" class="menu-icon">
+            <p>Location</p>
+        </div>
+        <div class="menu-item">
+            <img src="./images/telephone-white.png" alt="Phone Icon" class="menu-icon">
+            <p>demo@gmail.com</p>
+        </div>
+        <div class="menu-item">
+            <img src="./images/envelope-white.png" alt="Email Icon" class="menu-icon">
+            <p>+02 1234567890</p>
+        </div>
+    </div>
+  </div>
+</main>
 
 <footer class="footer_section">
   <p>&copy; 2024 All Rights Reserved. Design by <a href="#">Moisés Martínez</a></p>
