@@ -13,9 +13,80 @@
 
   <title>Fundamentals of Computer Engineering</title>
   <style>
+    body {
+        margin :0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    header {
+        background-color: #333;
+        color: white;
+        padding: 20px 0;
+        text-aling: center;
+    }
+
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-title {
+        font-size: 1.5rem;
+        font-left: 20px;
+    }
+    nav {
+        color: white;
+        text-decoration: none;
+        padding: 5px 10px;
+        font-size: 1rem;
+        transition: background-color 0.3s;
+    }
+    nav a:hover {
+        background-color: #555;
+    }
+    .footer_section {
+        max-width: 1000px;
+        width: 100%;
+        background-color: #333;
+        color: white;
+        text-align: center;
+    }
+    .footer_section a {
+        color: red;
+        text-decoration: none;
+    }
+    .footer_section a:hover {
+        text-decoration: underline;
+    }
+
   </style>
 </head>
 <body>
+
+<header class="container">
+  <div class="header-content">
+    <div class="header-title">Webpage Header</div>
+    <nav>
+      <a href="#" class="active">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<footer class="footer_section">
+  <p>&copy; 2024 All Rights Reserved. Design by <a href="#">Moisés Martínez</a></p>
+</footer>
 
 </body>
 </html>
