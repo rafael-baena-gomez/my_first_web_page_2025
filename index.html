@@ -11,7 +11,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Fundamentals of Computer Engineering</title>
+  <title>Minecraft-news</title>
   <style>
     body {
         margin :0;
@@ -28,7 +28,7 @@
     }
 
     header {
-        background-color: #333;
+        background-color: #296209;
         color: white;
         padding: 20px 0;
         text-align: center;
@@ -64,7 +64,7 @@
     }
 
     nav a.active {
-        background-color: red;
+        background-color: rgb(4, 126, 34);
         color: white;
     }
     
@@ -77,7 +77,7 @@
     }
 
     .footer_section a {
-        color: red;
+        color: green;
         text-decoration: none;
     }
 
@@ -85,14 +85,38 @@
         text-decoration: underline;
     }
 
+
+
     .content {
         height: 800px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: #f5f5f5;
+
+        background-image: url("./images/M.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        color: #f5f5f5;
+        position: relative;
+        text-align: center;
     }
+
+    .content::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.6);
+    }
+
+    .content h1,
+    .content p {
+        position: relative;
+        z-index: 1;
+    }
+
 
     .menu {
         background-color: #1a1a2e;
@@ -123,6 +147,21 @@
         width: 40px;
         height: 40px;
     }
+    
+    .news-content {
+        background-color: white;
+        padding: 40px 30px;
+        line-height: 1.8;
+    }
+
+    .news-content h2 {
+        color: #4caf50;
+        margin-top: 30px;
+    }
+
+    .news-content ul {
+        padding-left: 20px;
+    }
 
   </style>
 </head>
@@ -130,7 +169,7 @@
 
 <header class="container">
   <div class="header-content">
-    <div class="header-title">Webpage Header</div>
+    <div class="header-title">Mounts of mayhem update</div>
     <nav>
       <a href="#" class="active">Home</a>
       <a href="#">About</a>
@@ -141,9 +180,57 @@
 
 <main class="container">
   <div class="content">
-    <h1>Welcome to the Webpage</h1>
-    <p>This the central area of the webpage where you can include content.</p>
+    <h1>Minecraft 1.21.11 is here, and this is all it brings</h1>
+    <p>New mounts, creatures, and items arrive to the cubic world.</p>
   </div>
+
+<section class="news-content">
+    <p>
+      Mojang has officially released the new version of <strong>Minecraft 1.21.11</strong>, titled
+      <strong>“Mounts of Mayhem”</strong>, an update that revolutionizes world exploration thanks to new
+      rideable creatures and enhanced gameplay mechanics.
+    </p>
+
+   <h2>⚔️ The spear</h2>
+    <p>
+      This update also introduces a new weapon to the game, the spear, wich deals more damage the faster you charge with it, making it into the second weapon in the game wich can deal infinite damage.
+    </p>
+    <p>
+      The spear can be crafted with all 7 weapons and tools tiers (wood, stone, iron, gold, diamond, netherite and copper) and can also be combined with a new enchantemt called lunge (I-III) that provides a dash movement.
+    </p>
+    <p>
+      Here is a link to a calculator of mentioned damage values: <a href="https://minecraft.wiki/w/Calculators/Spear_damage" target="_blank">Spear Damage Calculator</a>
+    </p>
+
+    <h2>🐎 New Mobs</h2>
+    <ul>
+      <li>Added the nautilus mob. Wich when tamed, the player will be able to ride them and obtain infinite water breathing plus a dash movement.</li>
+      <li>Added the zombie nautilus mob (with a coral variant) wich spawns with a drowned zombie on top of it attacking the player, it can also be ridden by the player and has the same abilities as the normal nautilus.</li>
+      <li>Finally added the zombie horse wich had already been existing inside the game code for a few years. This one will spawn with a zombie ridding it equiped with a spear.</li>
+      <li>Added the camel husk, a camel variant that can also be ridden by the player and that shares the same behaviour as its non-zombie variant.</li>
+      <li>Added the parched, a dessert esqueleton variant that spawns along with a camel husk and a husk with a spear that will shoot at the player while the other two mobs charge at him.</li>
+    </ul>
+
+    <h2>⚙️ Technical Improvements</h2>
+    <ul>
+      <li>Server performance optimization</li>
+      <li>Bug fixes in animations</li>
+      <li>Improved mount physics</li>
+    </ul>
+
+    <h2>📅 Availability</h2>
+    <p>
+      Minecraft 1.21.11 is now available on both <strong>Java Edition</strong> and
+      <strong>Bedrock Edition</strong>.
+    </p>
+
+    <p>
+      For more information, visit the official
+      <a href="https://www.minecraft.net/es-es" target="_blank">Minecraft website</a>
+    </p>
+
+  </section>
+
   <div class="menu">
     <div class="menu-content">
         <div class="menu-item">
@@ -152,11 +239,11 @@
         </div>
         <div class="menu-item">
             <img src="./images/telephone-white.png" alt="Phone Icon" class="menu-icon">
-            <p>demo@gmail.com</p>
+            <p>+02 1234567890</p>
         </div>
         <div class="menu-item">
             <img src="./images/envelope-white.png" alt="Email Icon" class="menu-icon">
-            <p>+02 1234567890</p>
+            <p>demo@gmail.com</p>
         </div>
     </div>
   </div>
