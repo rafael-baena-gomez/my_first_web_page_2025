@@ -10,3 +10,4 @@ This is the repository of activity III.
 - Added content and menu.
 - Made the website theme and decorated it.
 - Added the glowing-hover feature.
+- Added comentaries to the code.
