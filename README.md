@@ -17,3 +17,4 @@ This is the repository of activity III.
 - Added styles.css file in css folder.
 - Added styles.css in the index file as link.
 - Added about.html page and modify links and styles of the header menu.
+- Changed the href due to it not rendering the styles before said change.
