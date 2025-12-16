@@ -10,179 +10,11 @@
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
+
+  <link rel="stlesheet" type="text/css" href="./css/style.css">
+
 <!-- Title shown on the browser tab -->
   <title>Minecraft-news</title>
-  <style>
-/* Styles the entire page layout and font */
-    body {
-        margin :0;
-        font-family: Arial, sans-serif;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .container {
-        max-width: 1000px;
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    header {
-        background-color: #296209;
-        color: white;
-        padding: 20px 0;
-        text-align: center;
-    }
-
-    .header-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .header-title {
-        font-size: 1.5rem;
-        padding-left: 20px;
-    }
-
-    nav {
-        display: flex;
-        gap: 15px;
-    }
-
-    nav a {
-        color: white;
-        text-decoration: none;
-        font-size: 1rem;
-        padding: 5px 10px;
-        border-radius: 5px;
-        transition: background-color 0.3s;
-    }
-/* Hover effect */
-    nav a:hover {
-        background-color: #555;
-    }
-
-    nav a.active {
-        background-color: rgb(4, 126, 34);
-        color: white;
-    }
-    
-    .footer_section {
-        max-width: 1000px;
-        width: 100%;
-        background-color: #333;
-        color: white;
-        text-align: center;
-    }
-
-    .footer_section a {
-        color: green;
-        text-decoration: none;
-    }
-
-    .footer_section a:hover {
-        text-decoration: underline;
-    }
-
-
-
-    .content {
-        height: 800px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        background-image: url("./images/M.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-
-        color: #f5f5f5;
-        position: relative;
-        text-align: center;
-
-        transition: box-shadow 0.4s ease, filter 0.4s ease;
-    }
-
-
-    .content:hover {
-        box-shadow: 0 0 25px 8px rgba(0, 255, 100, 0.8);
-        filter: brightness(1.15);
-    }
-
-    .content:hover {
-        box-shadow: 
-            0 0 15px #00ff66,
-            0 0 30px #00ff66,
-            0 0 60px #00ff66;
-        filter: brightness(1.2) contrast(1.1);
-    }
-
-
-/* Dark overlay placed over the background image for readability */
-    .content::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: rgba(0, 0, 0, 0.6);
-    }
-
-    .content h1,
-    .content p {
-        position: relative;
-        z-index: 1;
-    }
-
-
-    .menu {
-        background-color: #1a1a2e;
-        color: white;
-        padding: 20px 0;
-        text-align: center;
-    }
-
-    .menu-content {
-        display: flex;
-        justify-content: center;
-        gap: 50px;
-        align-items: center;
-    }
-
-    .menu-item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .menu-item p {
-        margin-top: 10px 0 0;
-        font-size: 14px;
-    }
-
-    .menu-icon {
-        width: 40px;
-        height: 40px;
-    }
-/* Styles the main news article section */
-    .news-content {
-        background-color: white;
-        padding: 40px 30px;
-        line-height: 1.8;
-    }
-
-    .news-content h2 {
-        color: #4caf50;
-        margin-top: 30px;
-    }
-
-    .news-content ul {
-        padding-left: 20px;
-    }
-
-  </style>
 </head>
 <body>
 <!-- The main header section with title and navigation -->
@@ -190,8 +22,8 @@
   <div class="header-content">
     <div class="header-title">Mounts of mayhem update</div>
     <nav>
-      <a href="#" class="active">Home</a>
-      <a href="#">About</a>
+      <a href="index.html" class="active">Home</a>
+      <a href="pages/about.html">About</a>
       <a href="#">Contact</a>
     </nav>
   </div>
